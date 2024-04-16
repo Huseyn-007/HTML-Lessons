@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(4, 2, 56);
+}
+
+
+/* Header Start */
+header h1 {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+
+header
+{
+    width: 100%;
+    background-color: rgb(4, 2, 56 );
+    position: fixed;
+    top: 0;
+}
+#breaker
+{
+    height: 35vh;
+}
+nav
+{
+    background-color: rgb(4, 132, 255 );
+    width: 100%;
+
+
+}
+ol
+{
+    list-style: none;
+    width: 40%;
+    margin: auto;
+    height: 100%;
+    padding: 15px;
+    text-align: center;
+
+}
+
+li
+{
+    display: inline-block;
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 8px;
+    font-size: 1.5em;
+    color: white;
+}
+
+
+li:hover a{
+    border: 1px solid   rgb(4, 2, 56 );
+
+ transition-property: background-color, color;
+    transition-duration: 0.5s;
+    background-color: white;
+    color:  rgb(4, 132, 255 );
+
+}
+
+/* Header End */
+
+
+
+
+aside
+{
+    width: 15%;
+}
+aside img
+{
+    width: 100%;
+}
+
+aside section
+{
+    height: 80vh;
+}
+
+
+aside h2
+{
+    color: white;
+    font-size: 0.9em;
+}
+
+
+
+h1
+{
+    color:  white;
+}
+
+
+main
+{
+    width: 65%;
+    padding: 20px;
+}
+
+aside, main
+{
+    float: left;
+}
+
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: springgreen;
+    margin: 0;
+    clear: both;
+}
+
+
+
