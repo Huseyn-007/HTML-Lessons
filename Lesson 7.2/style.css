@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --main-color: #1a1a1a;
+  --app-yellow:#ffe500;
+}
+
+header {
+  background-color: var(--main-color);
+  text-align: center;
+  padding-bottom: 21px;
+}
+
+.header-icons {
+  width: 60%;
+  margin: auto;
+  position: relative;
+}
+
+.header-icons * {
+  position: absolute;
+}
+
+.i-1 {
+  left: 0;
+  top: 19px;
+}
+
+.i-2 {
+  right: 0;
+  top: 24px;
+}
+
+.box {
+  width: 70%;
+  margin: auto;
+  padding-top: 350px;
+  text-align: center;
+}
+
+header .box h1 {
+  color: white;
+  font-size: 1.6em;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 17px;
+}
+
+header .box p {
+  color: white;
+  font-size: 1.05em;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 6px;
+  margin-top: 38px;
+}
+
+header .box a {
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 16px 25px;
+  background-color: var(--app-yellow);
+  display: inline-block;
+  margin: auto;
+  margin-top: 53px;
+  text-decoration: none;
+  color: var(--main-color);
+  letter-spacing: 4px;
+}
+
+
+.bottom-arrow{
+    margin-top: 250px;
+}
+
+main{
+    padding-top: 165px;
+    padding-bottom: 225px;
+    text-align: center;
+}
+
+main article{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    color: #707070;
+    line-height: 32px;
+    font-size: 1.3em;
+    margin-top: 94px;
+}
+
+
+.first-section{
+    padding-top: 85px;
+    padding-bottom: 37px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.first-section h1{
+    text-transform: uppercase;
+    letter-spacing: 17px;
+    color: var(--main-color);
+    font-size: 1.6em;
+    font-weight: 300;
+    margin-top: 35px;
+}
+
+.first-section > article{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    color: #707070;
+    line-height: 32px;
+    font-size: 1.3em;
+    margin-top: 41px;
+}
+.card-container{
+    width: 65%;
+    margin: auto;
+    margin-top: 87px;
+}
+.card{
+    display: inline-block;
+    box-shadow: 0 0 5px 1px lightgray;
+    padding-top: 47px;
+    padding-bottom: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 22%;
+    margin:0 15px;
+    text-align: center;
+}
+.card h1{
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+.card article{
+    text-align: center;
+    color: #707070;
+    line-height: 25px;
+    font-size: 1em;
+    margin-top: 41px;
+}
+
+.card-container2{
+  width: 65%;
+  margin: auto;
+}
+
+.card2{
+  display: inline-block;
+  box-shadow: 0 0 5px 1px lightgray;
+  width: 21%;
+  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 15px;
+  background-color: white;
+  margin: 0px 15px;
+  margin-top: 30px;
+}
+
+.card2 h1{
+  text-transform: none;
+  font-size: 1.08em;
+  margin-left: 7px;
+  margin-top: 0px;
+  letter-spacing: 1px;
+  text-align:left;
+  font-weight: bold;
+}
+
+
+.pr{
+  width: 100%;
+  height: 3px;
+  margin-top: 15px;
+  margin-left: 3px;
+  margin-right: 3px;
+  background: linear-gradient(to right, yellow 85%, lightgray 70%);
+}
+#mrgn{
+  margin-top: 22px;
+}
+#dd{
+  background: linear-gradient(to right, yellow 70%, lightgray 70%);
+
+}
+
+#ddd{
+  background: linear-gradient(to right, yellow 95%, lightgray 70%);
+
+}
+
+#d{
+  background: linear-gradient(to right, yellow 98%, lightgray 70%);
+
+}
+
+#dddd{
+  background: linear-gradient(to right, yellow 80%, lightgray 70%);
+
+}
+
+#d2{
+  background: linear-gradient(to right, yellow 90%, lightgray 70%);
+
+}
+
+@media only screen and (max-width: 600px)
+{
+  .card
+  {
+    margin-top: 10px;
+      width: 90%;
+  }
+
+}
