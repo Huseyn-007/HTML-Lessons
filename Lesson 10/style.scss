@@ -1,0 +1,105 @@
+@import "reset", "variables";
+
+// h1{
+//     color: $primary_color;
+//     font-size: $myFont;
+// }
+
+// h2{
+//     background-color: $secodary_color;
+
+// }
+
+// nav{
+//     ul{
+//         list-style: none;
+
+//         li{
+//             display: inline-block;
+
+//         }
+
+//     }
+
+//     a{
+//         display: inline-block;
+//         padding: 6px 12px;
+//         text-decoration:none;
+//         color: $primary_color;
+//     }
+// }
+
+// @mixin color_base{
+//     color: deepskyblue;
+//     background-color: whitesmoke;
+// }
+
+// @mixin font_base{
+//     font-size: 3em;
+//     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+// }
+
+// @mixin common_style{
+//     @include color_base;
+//     @include font_base;
+
+//     border: 4px solid black;
+// }
+
+// h1{
+//     @include common_style;
+// }
+
+// h2{
+//     @include font_base;
+//     color: red;
+// }
+
+@mixin base_style($color, $font) {
+  color: $color;
+  font-size: $font;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@mixin shadow_style($color) {
+  box-shadow: 0 0 10px 10px $color;
+}
+
+h1 {
+  @include base_style(#00bfff, 4em);
+  @include shadow_style(#3f3f3f);
+}
+h2 {
+    @include base_style(#00ff7f, 2.5em);
+    @include shadow_style(#2d3f7a);
+  }
+
+
+
+  .buton-basic{
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .buton-sumbit{
+    @extend .buton-basic;
+    background-color: deepskyblue;
+  }
+
+
+
+  .buton-report{
+    @extend .buton-basic;
+    background-color: lightgray;
+  }
+
+
+  @function pow($base,$exponent){
+    $result:1;
+    @for $_ from 1 to $exponent+1{
+        $result:$result*$base;
+    }
+    @return $result;
+  }
